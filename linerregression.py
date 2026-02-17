@@ -27,5 +27,6 @@ model.add(Dense(1))
 #model.summary() #Print model Summarymodel.compile(loss= "mean_squared_error" , optimizer="adam", metrics=["mean_squared_error"])
 model.compile(loss= "mean_squared_error" , optimizer="adam", metrics=["mean_squared_error"])
 model.fit(x,y,epochs=200)
-x=[[12.0]]
-print(model.predict(x))
+x_test = np.array([[12.0]], dtype=float)
+print(model.predict(x_test))
+
