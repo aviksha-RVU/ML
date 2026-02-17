@@ -13,8 +13,11 @@ from math import sqrt
 import keras
 from keras.models import Sequential
 from keras.layers import Dense
-x = [[4],[5],[6],[7],[8],[9],[10]]
-y = [8, 10 , 12, 14, 16, 18, 20]
+import numpy as np
+
+x = np.array([[4],[5],[6],[7],[8],[9],[10]], dtype=float)
+y = np.array([8,10,12,14,16,18,20], dtype=float)
+
 # Define model
 model = Sequential()
 model.add(Dense(1000, input_dim=1, activation= "relu"))
