@@ -1,3 +1,5 @@
+pip install pandas numpy matplotlib scikit-learn tensorflow keras
+
 # Import required libraries
 import pandas as pd
 import numpy as np 
