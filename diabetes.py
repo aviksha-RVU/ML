@@ -14,7 +14,7 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.utils import to_categorical 
-df = pd.read_csv("NBD.csv")
+df = pd.read_csv("diabetes.csv")
 x=df.drop('diabetes',axis=1)
 y=df['diabetes']
 model = Sequential()
@@ -27,6 +27,6 @@ model.add(Dense(1, activation='sigmoid'))
 model.compile(optimizer='adam', 
               loss='binary_crossentropy', 
               metrics=['accuracy'])
-model.fit(x,y, epochs=100)
+model.fit(x,y, epochs=200)
 X_marks=[[45,63]]
 print(model.predict(X_marks))
