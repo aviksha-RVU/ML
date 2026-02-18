@@ -6,7 +6,7 @@ import sklearn
 
 # Import necessary modules
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error 
 from math import sqrt
 
 # Keras specific
